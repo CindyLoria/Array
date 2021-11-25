@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+//mendeklarasikan fungsi void bubbleSort dengan menerima inputan arr dan n yang bertipe integer
+void bubbleSort(int arr[], int n){
+  int i, j, temp; //mendeklarasikan variable i dan j untuk perulangan dan tmp untuk variable penukaran sementara.
+  
+//melakukakan perulangan 
+  for (i = 0; i < n; i++){
+    for (j = 0; j < n - i - 1; j++){
+    	
+//cek kondisi jika nilai variable arr pada index ke j lebih besar dari nilai varible arr pada index ke j+1 maka melakukan penukaran nilai variable
+      if (arr[j] > arr[j + 1]){
+        temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
+    }
+  }
+}
+int main(){
+  int array[100], n, i, j;
+  cout << "Masukkan banyak elemen: "; // melakukan input nilai untuk variable n yang digunakan sebagai jumlah data.
+  cin >> n;
+  cout << "Masukkan nilai: \n";
+  for (i = 0; i < n; i++){
+    cin >> array[i];
+  }
+  bubbleSort(array, n); //memanggil fungsi bubbleSort dengan memasukkan variable array dan n.
+  cout << "Hasil pengurutan adalah:\n";
+  for (i = 0; i < n; i++){
+    cout << array[i] << " ";
+  }
+  cout << "\n";
+}
