@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	int n, temp;
+	cout<<"Banyak elemen: ";
+	cin>>n;
+	
+	int elemen[n];
+	
+	for(int i=0; i<n; i++){
+		cout<<"Elemen ke-"<<i+1<<": ";
+		cin>>elemen[i];
+		
+	}
+	for(int i=0; i<n-1; i++){
+		for(int j=0; j<n-i-1; j++){
+			if(elemen[j]>elemen[j+1]){
+				temp = elemen[j];
+				elemen[j]= elemen[j+1];
+				elemen[j+1]= temp;
+			}
+		}
+	}
+	cout<<"Hasil: ";
+	for(int i=0; i<n; i++){
+		cout<<elemen[i]<<" ";
+	
+}
+}
