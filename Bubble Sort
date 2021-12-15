@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-//mendeklarasikan fungsi void bubbleSort dengan menerima inputan arr dan n yang bertipe integer
+//mendeklarasikan fungsi void BubbleSort dengan menerima inputan arr dan n yang bertipe integer
+
 void bubbleSort(int arr[], int n){
   int i, j, temp; //mendeklarasikan variable i dan j untuk perulangan dan tmp untuk variable penukaran sementara.
   
@@ -9,7 +10,7 @@ void bubbleSort(int arr[], int n){
   for (i = 0; i < n; i++){
     for (j = 0; j < n - i - 1; j++){
     	
-//cek kondisi jika nilai variable arr pada index ke j lebih besar dari nilai varible arr pada index ke j+1 maka melakukan penukaran nilai variable
+//mengecek kondisi jika nilai variable arr pada index ke j lebih besar dari nilai varible arr pada index ke j+1 maka melakukan penukaran nilai variable
       if (arr[j] > arr[j + 1]){
         temp = arr[j];
         arr[j] = arr[j + 1];
