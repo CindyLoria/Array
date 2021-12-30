@@ -2,9 +2,10 @@
 using namespace std;
 
 //mendeklarasikan fungsi void BubbleSort dengan menerima inputan arr dan n yang bertipe integer
-
 void bubbleSort(int arr[], int n){
-  int i, j, temp; //mendeklarasikan variable i dan j untuk perulangan dan tmp untuk variable penukaran sementara.
+
+//mendeklarasikan variable i dan j untuk perulangan dan tmp untuk variable penukaran sementara.
+  int i, j, temp; 
   
 //melakukakan perulangan 
   for (i = 0; i < n; i++){
