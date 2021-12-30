@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
 	int n;
-	string nama[10],ket[10];
+	string nama[10],keterangan[10];
 	int nilai[10];
 
 	cout<<"Masukan Jumlah Data = ";
@@ -20,19 +20,19 @@ int main()
 		cin>>nilai[i];
 		
 		if (nilai[i]<=50) {
-		 	ket[i]="Tidak Lulus";
+		 	keterangan[i]="Tidak Lulus";
 		} else {
-			ket[i]="Lulus";
+			keterangan[i]="Lulus";
 		}
 	}
 	cout<<endl;
 	cout<<"DAFTAR NILAI"<<endl;
 	cout<<"-------------------------------------------"<<endl;
-	cout<<"No     Nama           Nilai           Status         "<<endl;
+	cout<<"No      Nama           Nilai           Status         "<<endl;
 	cout<<"-------------------------------------------"<<endl;
 
 	for (int i=0; i<n;i++) {
-	cout<<i+1<<"   "<<nama[i]<<"            "<<nilai[i]<<"          "<<ket[i]<<endl;
+	cout<<i+1<<"   "<<nama[i]<<"            "<<nilai[i]<<"          "<<keterangan[i]<<endl;
 	cout<<"-------------------------------------------"<<endl;
 	}
 }
